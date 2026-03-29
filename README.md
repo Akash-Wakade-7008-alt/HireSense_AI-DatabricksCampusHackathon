@@ -1,6 +1,14 @@
-# 🛡️ JobGuard AI — Fraud Detection Platform
+# 🛡️ JobGuard AI — Intelligent Job Fraud Detection
 
-JobGuard AI is an intelligent web application that helps users detect fraudulent job offers. By analyzing job descriptions, emails, or screenshots, the platform identifies red flags and provides a risk assessment using AI.
+JobGuard AI is an AI-powered web application that helps job seekers identify fraudulent job offers. By analyzing job descriptions, emails, or uploaded screenshots, the platform detects suspicious patterns and provides a clear risk assessment.
+
+In a world where online job scams are increasing, JobGuard AI acts as a simple, fast, and reliable first line of defense.
+
+---
+
+## 📸 Preview
+
+![JobGuard AI Preview](./assets/Preview.png)
 
 ---
 
@@ -8,57 +16,73 @@ JobGuard AI is an intelligent web application that helps users detect fraudulent
 
 * 🔍 Analyze job descriptions for scam indicators
 * 🖼️ Upload screenshots of job offers
-* 🤖 AI-powered fraud detection
-* ⚡ Fast and simple user interface
-* 📊 Risk assessment output (legit vs suspicious)
+* 🤖 AI-powered fraud detection using Gemini
+* ⚡ Fast and responsive UI
+* 📊 Clear risk assessment (Legit / Suspicious / High Risk)
+* 🎯 Clean and beginner-friendly interface
 
 ---
 
 ## 🧠 How It Works
 
-1. User pastes job description or uploads an image
-2. Data is sent to the backend
-3. AI model analyzes content for scam patterns
-4. Risk score and insights are returned
-5. Results are displayed on the UI
+1. Paste a job description or upload a screenshot
+2. The frontend sends data to the backend
+3. Backend processes input using AI (Gemini API)
+4. The system detects red flags (fake domains, urgency, payment requests, etc.)
+5. A risk score and explanation are returned
+6. Results are displayed instantly on the UI
 
 ---
 
 ## 🖥️ Frontend
 
-The frontend is built to provide a clean and intuitive user experience.
+The frontend is designed for clarity and ease of use, ensuring users can quickly check job offers without friction.
 
 ### Tech Stack:
 
-* HTML, CSS, JavaScript / TypeScript
-* Vite (for fast development and bundling)
-* Modern UI design
+* HTML, CSS, TypeScript
+* Vite
 
 ### Responsibilities:
 
 * Accept user input (text or image upload)
-* Display AI analysis results
-* Provide responsive and smooth UI
+* Display analysis results clearly
+* Provide smooth and responsive UI
 * Communicate with backend APIs
 
 ---
 
 ## ⚙️ Backend
 
-The backend handles AI processing and fraud detection logic.
+The backend is responsible for processing data and performing AI-based fraud detection.
 
 ### Tech Stack:
 
-* Node.js / Python (depending on your setup)
-* AI/ML APIs (e.g., Hugging Face or custom models)
+* Node.js / Python (depending on your implementation)
+* Google Gemini API
 * REST API
 
 ### Responsibilities:
 
-* Receive and process user input
-* Run fraud detection model
-* Detect scam patterns and red flags
-* Return structured analysis response
+* Receive user input
+* Process text and image data
+* Send prompts to Gemini API
+* Detect scam patterns and anomalies
+* Return structured fraud analysis
+
+---
+
+## 🤖 AI Integration (Gemini)
+
+This project uses Google's Gemini API to analyze job-related content and detect fraud signals.
+
+### What the AI checks:
+
+* Unrealistic salary offers
+* Requests for upfront payments
+* Suspicious email domains
+* Urgency or pressure tactics
+* Lack of company authenticity
 
 ---
 
@@ -66,6 +90,7 @@ The backend handles AI processing and fraud detection logic.
 
 ```
 ├── assets/             # Images and static files
+│   └── Preview.png     # App preview image
 ├── src/                # Frontend source code
 ├── node_modules/       # Dependencies
 ├── index.html          # Main entry point
@@ -95,7 +120,15 @@ npm install
 
 ### 3. Setup environment variables
 
-Create a `.env` file based on `.env.example` and add your API keys.
+Create a `.env` file in the root directory and add:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+> ⚠️ Never commit your API keys or `.env` file to GitHub.
+
+---
 
 ### 4. Run the project
 
@@ -109,23 +142,38 @@ npm run dev
 
 * Paste a job description OR upload an image
 * Click **"Scan for Fraud"**
-* View AI-generated fraud analysis
+* Instantly receive AI-based fraud analysis
 
 ---
 
 ## 🎯 Future Improvements
 
-* 🔐 User authentication
-* 📈 Detailed fraud reports
+* 🔐 User authentication system
+* 📊 Detailed fraud reports with scoring breakdown
 * 🌍 Multi-language support
-* 🧩 Browser extension for job sites
-* 📊 Dashboard for tracking scans
+* 🧩 Browser extension for LinkedIn / job portals
+* 📁 History of scanned job offers
+* 📈 Analytics dashboard
+
+---
+
+## 🧪 Example Use Cases
+
+* Checking suspicious LinkedIn job offers
+* Verifying emails from unknown recruiters
+* Screening freelance job proposals
+* Detecting scam internship postings
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
@@ -137,10 +185,17 @@ This project is licensed under the MIT License.
 
 ## 💡 Inspiration
 
-With the rise of online job scams, JobGuard AI aims to protect job seekers by providing an easy-to-use AI tool that detects fraud before it causes harm.
+Many job seekers—especially students—fall victim to scams due to lack of awareness.
+JobGuard AI was built to provide a simple tool that empowers users to verify opportunities before trusting them.
 
 ---
 
 ## 👨‍💻 Author
 
 Built with ❤️ by Akash Wakade
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star ⭐ on GitHub!
