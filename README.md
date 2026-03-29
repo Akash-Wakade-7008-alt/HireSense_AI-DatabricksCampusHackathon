@@ -175,11 +175,6 @@ Contributions are welcome!
 3. Make your changes
 4. Submit a pull request
 
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
@@ -192,7 +187,7 @@ JobGuard AI was built to provide a simple tool that empowers users to verify opp
 
 ## 👨‍💻 Author
 
-Built with ❤️ by Akash Wakade
+Built with ❤️ by Akash 
 
 ---
 
