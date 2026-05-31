@@ -12,6 +12,8 @@ In a world where online job scams are increasing, JobGuard AI acts as a simple, 
 
 ---
 
+
+
 ## 🚀 Features
 
 * 🔍 Analyze job descriptions for scam indicators
